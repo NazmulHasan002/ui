@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+
+ </style>
+<title>Document</title>
+
+</head>
+
+
+<body>
+
+<h2>Calculate No Of Sandwitch</h2>
+
+<!--Input for asking no Of Bread and no Of Cheese -->
+
+<Label for="bread">Number of breads : </Label><input id="bread" type="number" name="" id=""><br><br>
+
+<label for="cheese">Number of cheese : </label><input id="cheese" type="number"> <br><br>
+
+
+<button id="btn">Calculate Sandiwith</button><br>
+
+<!--Place to display no of sandwich-->
+
+<span id="sandwich"></span>
+
+<script>
+
+
+document.getElementById("btn").addEventListener("click", function () {
+
+document.getElementById("sandwich").innerHTML = "Number of sandwiches : " + calSandwich();
+
+})
+
+
+function calSandwich() {
+
+
+var noOfBread = document.getElementById("bread").value
+
+var noOfCheese = document.getElementById("cheese").value
+
+
+if (noOfCheese >= noOfBread / 2) {
+
+return noOfBread / 2
+
+}
+
+else {
+
+return parseInt(noOfCheese)
+
+}
+
+}
+
+
+</script>
+
+</body>
+
+
+</html>
